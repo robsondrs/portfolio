@@ -1,0 +1,95 @@
+body, html {
+    font: 16px "Lato", sans-serif;
+    height: 100%;
+    background-color: #F0F0F2;
+}
+
+#navegacao .navbar {
+    background-color: #0D0D0D;
+}
+
+#banner {
+	position: relative;
+    height: 100%;
+    background-color: #3B3C40;
+}
+
+#banner .parallax {
+    position: relative; 
+    height: 100%;
+	opacity: 0.7;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+    background-attachment: fixed;
+    background-image: url(../imagens/banner1.jpg);
+}
+
+#banner .descricao {
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    margin-top: 50px;
+    padding-top: 100px;
+}
+
+#banner .box-banner {
+    color: #fff;
+	background-color: rgba(0,0,0,0.8);
+    padding: 25px 18px;
+	letter-spacing: 5px;
+}
+
+#banner .box-banner h2 {
+    text-transform: uppercase;
+    color: #007bff; 
+}
+
+#banner .banner-text {
+    padding: 10px 10px 0 10px;
+    margin-top: 15px;
+    font-size: 1em;
+}
+
+#sobre {
+    padding: 50px 0 70px 0;
+    background-color: rgba(0,0,0,0.1);
+}
+
+.titulo {
+    margin-bottom: 50px;
+    color: #0460D9;
+}
+
+#sobre .box-foto {
+    padding:50px 30px 50px 60px;
+    background-size: contain;
+    background-image: url(../imagens/fundo-foto.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#sobre .box-foto img {
+    border: 5px solid black;
+}
+
+#servico {
+    background-image: url(../imagens/fundo-abstrato.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.servico {
+    padding: 50px 0;
+    background-color: rgba(255,255,255,0.7);
+}
+
+.box-servico {
+    margin-bottom: 20px;
+}
+
+.box-servico h4 {
+    padding: 10px 0;
+}
