@@ -5,7 +5,50 @@ body, html {
 }
 
 #navegacao .navbar {
+    background-color: transparent;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#navegacao .navbar a {
+    color: #fff;
+    font-weight: 700;
+    font-size: 1em;
+    text-decoration: none;
+}
+
+#navegacao .navbar .navbar-nav a:after {
+    content: "";
+    height: 2px;
+    width: 0px;
+    float: left;
+    background-color: #007bff;
+    transition: .3s all;
+    border-radius: 10px;
+}
+
+#navegacao .navbar .navbar-nav a:hover:after {
+    width: 100%;
+}
+
+#navegacao .navbar a h2 {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+#navegacao.scroll .navbar{
     background-color: #0D0D0D;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+#navegacao.scroll .titulo-nome {
+    color: #007bff;
+    transition: .3s all;
+}
+
+#navegacao.scroll .navbar a:hover {
+    color: #fff;
 }
 
 #banner {
@@ -20,7 +63,7 @@ body, html {
 
 #banner .mask {
     height: 100%;
-    background: rgba(0,0,0,0.4);
+    background: rgba(0,0,0,0.6);
     padding: 70px 0;
 }
 
