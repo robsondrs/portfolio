@@ -1,5 +1,5 @@
 body, html {
-    font: 16px "Lato", sans-serif;
+    font: 16px "Roboto", sans-serif;
     height: 100%;
     background-color: #F0F0F2;
 }
@@ -9,15 +9,8 @@ body, html {
 }
 
 #banner {
-	position: relative;
     height: 100%;
-    background-color: #3B3C40;
-}
-
-#banner .parallax {
-    position: relative; 
-    height: 100%;
-	opacity: 0.7;
+    margin-top: 0;
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
@@ -25,11 +18,14 @@ body, html {
     background-image: url(../imagens/banner1.jpg);
 }
 
+#banner .mask {
+    height: 100%;
+    background: rgba(0,0,0,0.4);
+    padding: 70px 0;
+}
+
 #banner .descricao {
-    position: absolute;
-    top: 0px;
     width: 100%;
-    margin-top: 50px;
     padding-top: 100px;
 }
 
@@ -48,7 +44,17 @@ body, html {
 #banner .banner-text {
     padding: 10px 10px 0 10px;
     margin-top: 15px;
-    font-size: 1em;
+}
+
+.titulo-nome {
+    font-family: 'Dancing Script', cursive;
+    margin: 10px 20px;
+}
+
+.titulo {
+    margin-bottom: 50px;
+    color: #0460D9;
+    text-transform: uppercase;
 }
 
 #sobre {
@@ -56,9 +62,17 @@ body, html {
     background-color: rgba(0,0,0,0.1);
 }
 
-.titulo {
-    margin-bottom: 50px;
-    color: #0460D9;
+#sobre h3 {
+    margin: 5px 0 20px 70px;
+    font-size: 3.2em;
+}
+
+#sobre .dev {
+    font-size: 1.1em;
+}
+
+#sobre p{
+    text-indent: 25px;
 }
 
 #sobre .box-foto {
