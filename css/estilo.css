@@ -31,24 +31,22 @@ body, html {
     width: 100%;
 }
 
-#navegacao .navbar a h2 {
-    font-size: 2em;
-    font-weight: bold;
+#navegacao .navbar a h1 {
+    font-size: 2.5em;
 }
 
 #navegacao.scroll .navbar{
     background-color: #0D0D0D;
     padding-top: 5px;
     padding-bottom: 5px;
+    border-bottom: 1px solid rgba(255,255,255,.1);
+    box-shadow: 0 0 10px rgba(0,0,0,.5);
 }
 
 #navegacao.scroll .titulo-nome {
     color: #007bff;
-    transition: .3s all;
-}
-
-#navegacao.scroll .navbar a:hover {
-    color: #fff;
+    font-size: 2em;
+    transition: .6s all;
 }
 
 #banner {
@@ -62,6 +60,7 @@ body, html {
 }
 
 #banner .mask {
+    position: relative;
     height: 100%;
     background: rgba(0,0,0,0.6);
     padding: 70px 0;
@@ -96,7 +95,7 @@ body, html {
 
 .titulo {
     margin-bottom: 50px;
-    color: #0460D9;
+    color: #007bff;
     text-transform: uppercase;
 }
 
@@ -106,7 +105,7 @@ body, html {
 }
 
 #sobre h3 {
-    margin: 5px 0 20px 70px;
+    margin: 5px 0 20px 0;
     font-size: 3.2em;
 }
 
@@ -145,8 +144,49 @@ body, html {
 
 .box-servico {
     margin-bottom: 20px;
+    padding: 10px;
+    transition: 1s all;
 }
 
 .box-servico h4 {
     padding: 10px 0;
+}
+
+.box-servico:hover {
+    background: rgba(0,0,0,.1);
+    box-shadow: 0 0 10px rgba(0,0,0,.3);
+}
+
+.box-servico::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 0;
+    height: 0;
+    transition: 1s all;
+}
+
+.box-servico:hover:after {
+    width: 70px;
+    height: 70px;
+    border-bottom: 2px solid #007bff;
+    border-right: 2px solid #007bff;
+}
+
+.box-servico::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    transition: 1s all;
+}
+
+.box-servico:hover:before {
+    width: 70px;
+    height: 70px;
+    border-top: 2px solid #007bff;
+    border-left: 2px solid #007bff;
 }
