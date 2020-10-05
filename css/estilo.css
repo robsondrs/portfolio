@@ -1,5 +1,7 @@
 body, html {
-    font: 16px "Roboto", sans-serif;
+    font: 16px "Open Sans";
+    letter-spacing: 0.5px;
+    line-height: 1.4;
     height: 100%;
     background-color: #F0F0F2;
 }
@@ -62,7 +64,7 @@ body, html {
 #banner .mask {
     position: relative;
     height: 100%;
-    background: rgba(0,0,0,0.6);
+    background: rgba(0,0,0,0.8);
     padding: 70px 0;
 }
 
@@ -73,12 +75,18 @@ body, html {
 
 #banner .box-banner {
     color: #fff;
-	background-color: rgba(0,0,0,0.8);
     padding: 25px 18px;
-	letter-spacing: 5px;
+    font-size: 20px;
+    font-weight: 500;
 }
 
 #banner .box-banner h2 {
+    font-family: "Montserrat";
+    line-height: 1;
+    letter-spacing: -1px;
+    font-weight: 500;
+    font-size: 42px;
+    text-shadow: 5px 10px 5px rgba(0,0,0,.7);
     text-transform: uppercase;
     color: #007bff; 
 }
@@ -89,14 +97,18 @@ body, html {
 }
 
 .titulo-nome {
-    font-family: 'Dancing Script', cursive;
-    margin: 10px 20px;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: -1px;
+    font-weight: 600;
+    margin: 10px 0;
 }
 
 .titulo {
+    font-size: 40px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
     margin-bottom: 50px;
     color: #007bff;
-    text-transform: uppercase;
 }
 
 #sobre {
@@ -106,7 +118,7 @@ body, html {
 
 #sobre h3 {
     margin: 5px 0 20px 0;
-    font-size: 3.2em;
+    font-size: 42px;
 }
 
 #sobre .dev {
@@ -130,7 +142,7 @@ body, html {
 }
 
 #servico {
-    background-image: url(../imagens/fundo-abstrato.jpg);
+    background-image: url(../imagens/banner3.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -139,12 +151,16 @@ body, html {
 
 .servico {
     padding: 50px 0;
-    background-color: rgba(255,255,255,0.7);
+    background-color: rgba(0,0,0,.9);
 }
 
 .box-servico {
+    position: relative;
     margin-bottom: 20px;
     padding: 10px;
+    color: #fff;
+    border-radius: 3px;
+    background: rgba(255,255,255,.1);
     transition: 1s all;
 }
 
@@ -153,7 +169,7 @@ body, html {
 }
 
 .box-servico:hover {
-    background: rgba(0,0,0,.1);
+    background: rgba(255,255,255,.3);
     box-shadow: 0 0 10px rgba(0,0,0,.3);
 }
 
@@ -164,12 +180,14 @@ body, html {
     right: 0;
     width: 0;
     height: 0;
+    border-color: #007bff;
     transition: 1s all;
 }
 
 .box-servico:hover:after {
     width: 70px;
     height: 70px;
+    border-bottom-right-radius: 3px;
     border-bottom: 2px solid #007bff;
     border-right: 2px solid #007bff;
 }
@@ -181,12 +199,19 @@ body, html {
     left: 0;
     width: 0;
     height: 0;
+    border-color: #007bff;
     transition: 1s all;
 }
 
 .box-servico:hover:before {
     width: 70px;
     height: 70px;
+    border-top-left-radius: 3px;
     border-top: 2px solid #007bff;
     border-left: 2px solid #007bff;
+}
+
+#portfolio {
+    padding: 50px 0 70px 0;
+    background-color: rgba(0,0,0,0.1);
 }
