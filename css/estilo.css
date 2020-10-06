@@ -3,7 +3,7 @@ body, html {
     letter-spacing: 0.5px;
     line-height: 1.4;
     height: 100%;
-    background-color: #F0F0F2;
+    background-color:#C2C2C3;
 }
 
 #navegacao .navbar {
@@ -53,19 +53,14 @@ body, html {
 
 #banner {
     height: 100%;
+    position: relative;
+    padding: 70px 0;
     margin-top: 0;
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
     background-attachment: fixed;
-    background-image: url(../imagens/banner1.jpg);
-}
-
-#banner .mask {
-    position: relative;
-    height: 100%;
-    background: rgba(0,0,0,0.8);
-    padding: 70px 0;
+    background-image: url(../imagens/banner1-1.jpg);
 }
 
 #banner .descricao {
@@ -113,7 +108,6 @@ body, html {
 
 #sobre {
     padding: 50px 0 70px 0;
-    background-color: rgba(0,0,0,0.1);
 }
 
 #sobre h3 {
@@ -142,7 +136,7 @@ body, html {
 }
 
 #servico {
-    background-image: url(../imagens/banner3.jpg);
+    background-image: url(../imagens/banner3-1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -151,7 +145,6 @@ body, html {
 
 .servico {
     padding: 50px 0;
-    background-color: rgba(0,0,0,.9);
 }
 
 .box-servico {
