@@ -38,7 +38,7 @@ body, html {
 }
 
 #navegacao.scroll .navbar{
-    background-color: #0D0D0D;
+    background-color: rgba(0,0,0,.9);
     padding-top: 5px;
     padding-bottom: 5px;
     border-bottom: 1px solid rgba(255,255,255,.1);
@@ -206,5 +206,32 @@ body, html {
 
 #portfolio {
     padding: 50px 0 70px 0;
-    background-color: rgba(0,0,0,0.1);
+}
+
+.box-portfolio {
+    width: 100%;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #0D0D0D;
+}
+
+.box-portfolio img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    border: 3px solid #C2C2C3;
+    object-fit: cover;
+    object-position: top;
+}
+
+.box-portfolio-text {
+    margin-top: 10px;
+    padding: 10px;
+    color: #fff;
+}
+
+#contato {
+    background-color: #0D0D0D;
+    padding: 50px 0 70px 0;    
 }
