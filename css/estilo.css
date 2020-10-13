@@ -1,4 +1,11 @@
-body, html {
+html {
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+body {
     font: 16px "Open Sans";
     letter-spacing: 0.5px;
     line-height: 1.4;
@@ -33,8 +40,12 @@ body, html {
     width: 100%;
 }
 
-#navegacao .navbar a h1 {
-    font-size: 2.5em;
+#navegacao .navbar img {
+    transition: .6s all; 
+}
+
+#navegacao.scroll .navbar img {
+    width: 300px;
 }
 
 #navegacao.scroll .navbar{
@@ -51,7 +62,7 @@ body, html {
     transition: .6s all;
 }
 
-#banner {
+#home {
     height: 100%;
     position: relative;
     padding: 70px 0;
@@ -63,19 +74,19 @@ body, html {
     background-image: url(../imagens/banner1-1.jpg);
 }
 
-#banner .descricao {
+#home .descricao {
     width: 100%;
     padding-top: 100px;
 }
 
-#banner .box-banner {
+#home .box-banner {
     color: #fff;
     padding: 25px 18px;
     font-size: 20px;
     font-weight: 500;
 }
 
-#banner .box-banner h2 {
+#home .box-banner h2 {
     font-family: "Montserrat";
     line-height: 1;
     letter-spacing: -1px;
@@ -86,7 +97,7 @@ body, html {
     color: #007bff; 
 }
 
-#banner .banner-text {
+#home .banner-text {
     padding: 10px 10px 0 10px;
     margin-top: 15px;
 }
