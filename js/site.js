@@ -7,10 +7,20 @@ $(window).scroll(function(){
     }
 });
 
+$('.navbar-nav a[href^="#"]').on('click', function(e) {
+	e.preventDefault();
+	var id = $(this).attr('href'),
+			targetOffset = $(id).offset().top;
+			
+	$('html, body').animate({ 
+		scrollTop: targetOffset - 60
+	}, 500);
+});
+
 $(document).ready(function(){
     if($(window).scrollTop() > 0){
         $('#navegacao').addClass('scroll');
-    }
+    };
 })
 
 /*-- ANIMAÇÃO COM SCROLL PARA CARREGAMENTO DE BLOCOS --*/
