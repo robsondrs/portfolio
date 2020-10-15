@@ -2,7 +2,7 @@
 <!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
 <!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
 <!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
-<!--[if (gte IE 9)|!(IE)]><!--><html lang="pt-br"> <!--<![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="pt-BR"> <!--<![endif]-->
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,7 +13,7 @@
 	<meta property="og:title" content="Robson Soares - Desenvolvedor WEB - Desenvolvedor back-end - Programador PHP - Desenvolvedor Websites - RS"/>
 	<meta property="og:type" content="website"/>
 	<meta property="og:url" content="https://robsonsoares.dev.br"/>
-	<meta property="og:image" content="img/90.jpg"/> 
+	<!--<meta property="og:image" content="img/90.jpg"/> -->
 	<meta property="og:site_name" content="Robson Soares - Desenvolvedor Web - Porto Alegre - RS"/>
 	<meta property="og:description" content="Desenvolvedor de Sistemas Web - Porto Alegre - RS, Sites, Sistemas, PHP, MySql, Postgresql, HTML, CSS, JQuery"/>
 	<meta name="OWNER" content="robson_drs@hotmail.com">
@@ -36,16 +36,16 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="css/estilo.css">
     <link rel="stylesheet" href="css/animacao.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-    
+    <link rel="stylesheet" href="css/responsivo.css">
 </head>
 <body>
     <section id="navegacao" class="fixed-top">
-        <nav class="navbar navbar-expand-lg navbar-dark">
+        <nav class="navbar navbar-expand-md navbar-dark">
             <div class="container">
-                <h1><a href="/" title="Robson Soares - Desenvolvedor WEB">Robson Soares</a></h1>
+                <h1 class="navbar-brand"><a href="/" title="Robson Soares - Desenvolvedor WEB">Robson Soares</a></h1>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -80,9 +80,9 @@
         <div class="container">
             <div class="text-center"><h2 class="titulo">Sobre</h2></div>
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-md-6 text-justify">
                     <span class="d-block dev"><em>Conheça o seu Desenvolvedor!</em></span>
-                    <h3 class="titulo-nome anime-esquerda text-center">Robson Soares</h3>
+                    <h3 class="titulo-nome anime-esquerda anime-init text-center">Robson Soares</h3>
                     <p>
                         Primeiramente muito prazer, sou desenvolvedor web e programador PHP. Sou iniciante neste mundo repleto de possibilidades, mas estou sempre à procura de novidades e diferentes formas de me desenvolvedor profissionalmente.
                     </p>
@@ -231,7 +231,7 @@
         <div class="container">
             <div class="text-center"><h2 class="titulo">Contato</h2></div>
             <div class="row justify-content-center">
-                <div class="col-6 text-center">
+                <div class="col-10 col-sm-8 col-md-6 text-center">
                     <p>
                         Caso tenha gostado do que viu e queira entrar em contado para conversar-mos, utilize alguns dos meios abaixo.
                     </p>
@@ -245,9 +245,13 @@
         </div>
     </section>
     <footer class="text-center">
-        <p>
-            2020 © Robson Soares. Todos os direitos reservados.
-        </p>
+        <div class="row justify-content-center">
+            <div class="col-10 text-center">
+                <p>
+                    2020 © Robson Soares. Todos os direitos reservados.
+                </p>
+            </div>
+        </div>
     </footer>
 
 
