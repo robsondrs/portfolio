@@ -1,10 +1,14 @@
 /*Extra small devices (portrait phones, menor que 576px)*/
 @media (max-width: 575.98px) {
+    html {
+        overflow-x: hidden;
+        height: auto;
+    }
     body {
         min-width: 320px !important;
         overflow-x: hidden !important;
     }
-
+    
     #navegacao .navbar {
         padding: .5rem 1rem;
     }
