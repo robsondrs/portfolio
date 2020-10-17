@@ -274,3 +274,7 @@ footer {
     padding: 20px 0 10px;
     color: #fff;
 }
+
+.fixed-top {
+    position: absolute;
+}

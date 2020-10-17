@@ -23,7 +23,7 @@ $(document).ready(function(){
     };
 })
 
-/*-- ANIMAÇÃO COM SCROLL PARA CARREGAMENTO DE BLOCOS --*/
+/*-- ANIMAÃ‡ÃƒO COM SCROLL PARA CARREGAMENTO DE BLOCOS --*/
 
 var root = document.documentElement;
 root.className += ' js';
@@ -34,11 +34,10 @@ function boxTop(idBox) {
 }
 
 $(document).ready(function() {
-  var $target = $(".anime-esquerda , .anime-topo , .anime-direita , .anime-debaixo"),
+  var $target = $(".anime-esquerda , .anime-direita , .anime-topo , .anime-debaixo"),
       animationClass = 'anime-init',
       windowHeight = $(window).height(),
-      offset = windowHeight - (windowHeight / 4);
-
+      offset = windowHeight - (windowHeight /8);
   function animeScroll() {
     var documentTop = $(document).scrollTop();
     $target.each(function() {
