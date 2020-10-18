@@ -13,21 +13,18 @@
         padding-right: 5%;
     }
     
-    #navegacao .navbar {
-        padding: .5rem 1rem;
-    }
-
-    #navegacao .navbar-toggler {
-        margin-bottom: 15px;
+    #navegacao .navbar{
+        background-color: rgba(0,0,0,.9);
+        padding-top: 5px;
+        padding-bottom: 5px;
+        border-bottom: 1px solid rgba(255,255,255,.1);
+        box-shadow: 0 0 10px rgba(0,0,0,.5);
     }
     
-    #navegacao.scroll .navbar-toggler {
-        margin-bottom: 0;
-    }
-
     #navegacao h1 a, #navegacao.scroll h1 a {
         margin-top: 10px;        
         width: 120px;
+        height: auto;
         background-image: url(../imagens/logo-invert.png);
     }
 
@@ -62,9 +59,58 @@
 
 /*Small devices (landscape phones, 576px e maiores)*/
 @media (min-width: 576px) and (max-width: 767.98px) {
-    body {
-        background: red;
+    html {
+        overflow-x: hidden;
+        height: auto;
     }
+
+    .container {
+        padding-left: 5%;
+        padding-right: 5%;
+        max-width: unset;
+    }
+
+    #navegacao .navbar{
+        background-color: rgba(0,0,0,.9);
+        padding-top: 5px;
+        padding-bottom: 5px;
+        border-bottom: 1px solid rgba(255,255,255,.1);
+        box-shadow: 0 0 10px rgba(0,0,0,.5);
+    }
+    
+    #navegacao h1 a, #navegacao.scroll h1 a {
+        margin-top: 10px;        
+        height: 40px;
+    }
+
+    #home {
+        padding-bottom: 50px;
+    }
+    #home .descricao {
+        padding-top: 40px;
+    }
+    
+    #home .box-banner {
+        font-size: 18px;
+    }
+
+    #home .box-banner h2 {
+        font-size: 38px;
+        letter-spacing: 2px;
+    }
+
+    #sobre, .servico, #portfolio, #contato {
+        padding: 30px 0 50px 0;
+    }
+
+    .titulo {
+        margin: 10px 0 30px 0;
+    }
+
+    .box-servico {
+        height: 270px;
+    }
+
 }
 
 /*Medium devices (tablets, 768px e maiores)*/
