@@ -28,6 +28,10 @@
         background-image: url(../imagens/logo-invert.png);
     }
 
+    #navegacao .navbar .navbar-nav a:hover:after {
+        width: 0px;
+    }
+
     #home {
         padding-bottom: 50px;
     }
@@ -72,20 +76,24 @@
 
     #navegacao .navbar{
         background-color: rgba(0,0,0,.9);
-        padding-top: 0;
+        padding-top: 2px;
         padding-bottom: 0;
         border-bottom: 1px solid rgba(255,255,255,.1);
         box-shadow: 0 0 10px rgba(0,0,0,.5);
     }
 
     #navegacao.scroll .navbar, #navegacao h1 {
-        padding-top: 0;
+        padding-top: 2px;
         padding-bottom: 0;
     }
     
     #navegacao h1 a, #navegacao.scroll h1 a {
         margin-top: 10px;        
         height: 40px;
+    }
+
+    #navegacao .navbar .navbar-nav a:hover:after {
+        width: 0px;
     }
 
     #home {
@@ -120,23 +128,17 @@
 
 /*Medium devices (tablets, 768px e maiores)*/
 @media (min-width: 768px) and (max-width: 991.98px) {
-    body {
-        background: blue;
-    }
+    
 }
 
 /*Large devices (desktops, 992px e maiores)*/
 @media (min-width: 992px) and (max-width: 1199.98px) {
-    body {
-        background: yellow;
-    }
+    
 }
 
 /*Extra large devices (large desktops, 1200px  e maiores)*/
 @media (min-width:1200px) and (max-width:1440px) {
-    body {
-        background: gray;
-    }
+    
 }
 
 @media (min-width:1441px) and (max-width:1600px) {

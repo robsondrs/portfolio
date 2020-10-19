@@ -23,6 +23,10 @@ $(document).ready(function(){
     };
 })
 
+$(".nav-link").on("click", function(){
+  $('.navbar-collapse').collapse('hide');
+});
+
 /*-- ANIMAÃ‡ÃƒO COM SCROLL PARA CARREGAMENTO DE BLOCOS --*/
 
 var root = document.documentElement;
