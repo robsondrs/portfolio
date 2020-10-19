@@ -72,10 +72,15 @@
 
     #navegacao .navbar{
         background-color: rgba(0,0,0,.9);
-        padding-top: 5px;
-        padding-bottom: 5px;
+        padding-top: 0;
+        padding-bottom: 0;
         border-bottom: 1px solid rgba(255,255,255,.1);
         box-shadow: 0 0 10px rgba(0,0,0,.5);
+    }
+
+    #navegacao.scroll .navbar, #navegacao h1 {
+        padding-top: 0;
+        padding-bottom: 0;
     }
     
     #navegacao h1 a, #navegacao.scroll h1 a {
