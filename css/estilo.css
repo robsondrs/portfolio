@@ -34,7 +34,7 @@ body {
     width: 0px;
     float: left;
     background-color: #007bff;
-    transition: .3s all;
+    transition: .5s all;
     border-radius: 10px;
 }
 
@@ -43,19 +43,18 @@ body {
 }
 
 #navegacao h1 a {
-    width: 400px;
+    width: 300px;
     height: 65px;
     display: block;
     text-indent: -9999px;
     background-image: url(../imagens/logo2-invert.png);
     background-repeat: no-repeat;
     background-size: contain;
-    transition: .6s all;
+    transition: .5s all;
 }
 
 #navegacao.scroll h1 a {
-    width: 300px;
-    height: auto;
+    height: 40px;
 }
 
 #navegacao.scroll .navbar{
@@ -139,6 +138,7 @@ body {
 }
 
 #sobre .box-foto {
+    margin-top: 40px;
     padding:50px 30px 50px 60px;
     background-size: contain;
     background-image: url(../imagens/fundo-foto.png);
@@ -266,6 +266,10 @@ body {
 #contato a:hover {
     text-decoration: none;
     color: #fff;
+}
+
+#contato .icone {
+    margin-top: 20px;
 }
 
 footer {
