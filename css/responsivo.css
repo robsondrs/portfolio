@@ -20,12 +20,12 @@
         border-bottom: 1px solid rgba(255,255,255,.1);
         box-shadow: 0 0 10px rgba(0,0,0,.5);
     }
-    
+
     #navegacao h1 a, #navegacao.scroll h1 a {
-        margin-top: 5px;        
+        margin-top: 0;
         width: 100px;
-        height: auto;
-        background-image: url(../imagens/logo-invert.png);
+        height: 40px;
+        background-image: url(../imagens/new-logo1.webp);
     }
 
     #navegacao .navbar .navbar-nav a:hover:after {
@@ -81,15 +81,10 @@
         border-bottom: 1px solid rgba(255,255,255,.1);
         box-shadow: 0 0 10px rgba(0,0,0,.5);
     }
-
-    #navegacao.scroll .navbar, #navegacao h1 {
-        padding-top: 2px;
-        padding-bottom: 0;
-    }
-    
+   
     #navegacao h1 a, #navegacao.scroll h1 a {
-        margin-top: 10px;        
-        height: 35px;
+        margin-top: 0;        
+        height: 45px;
     }
 
     #navegacao .navbar .navbar-nav a:hover:after {
@@ -150,15 +145,9 @@
         border-bottom: 1px solid rgba(255,255,255,.1);
         box-shadow: 0 0 10px rgba(0,0,0,.5);
     }
-
-    #navegacao.scroll .navbar, #navegacao h1 {
-        padding-top: 2px;
-        padding-bottom: 0;
-    }
     
     #navegacao h1 a, #navegacao.scroll h1 a {
-        margin-top: 10px;        
-        height: 35px;
+        height: 45px;
     }
 
     #navegacao .navbar .navbar-nav a:hover:after {

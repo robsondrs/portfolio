@@ -42,12 +42,17 @@ body {
     width: 100%;
 }
 
+#navegacao h1 {
+    margin-bottom: 0;
+}
+
 #navegacao h1 a {
+    margin-left: 10px;
     width: 300px;
     height: 65px;
     display: block;
     text-indent: -9999px;
-    background-image: url(../imagens/logo2-invert.png);
+    background-image: url(../imagens/new-logo1.webp);
     background-repeat: no-repeat;
     background-size: contain;
     transition: .5s all;
