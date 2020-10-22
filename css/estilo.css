@@ -42,24 +42,36 @@ body {
     width: 100%;
 }
 
-#navegacao h1 {
-    margin-bottom: 0;
-}
-
-#navegacao h1 a {
+#navegacao a.navbar-brand{
     margin-left: 10px;
-    width: 300px;
-    height: 65px;
+    padding-left: 70px;
     display: block;
-    text-indent: -9999px;
+    font-family: 'Montserrat', sans-serif;
     background-image: url(../imagens/new-logo1.webp);
     background-repeat: no-repeat;
     background-size: contain;
     transition: .5s all;
 }
 
-#navegacao.scroll h1 a {
-    height: 40px;
+#navegacao h1 {
+    margin-bottom: 0;
+    font-size: 1.8em;
+    letter-spacing: -1px;
+    text-transform: uppercase;
+    color: #007bff;
+    text-shadow: 0 0 10px #000;
+}
+
+#navegacao a span {
+    font-size: 1em !important;
+}
+
+#navegacao.scroll h1  {
+    font-size: 1.3em;
+}
+
+#navegacao.scroll a span {
+    font-size: 0.9em !important;
 }
 
 #navegacao.scroll .navbar{
@@ -180,6 +192,10 @@ body {
 
 .box-servico h4 {
     padding: 10px 0;
+}
+
+.box-servico svg {
+    height: 3em;
 }
 
 .box-servico:hover {
