@@ -42,6 +42,7 @@
     }
     #home .descricao {
         padding-top: 40px;
+        margin-bottom: 20px;
     }
     
     #home .box-banner {
@@ -51,6 +52,10 @@
     #home .box-banner h2 {
         font-size: 38px;
         letter-spacing: 2px;
+    }
+
+    #home span.animated {
+        bottom: 30px
     }
 
     #servico {
@@ -117,6 +122,7 @@
     }
     #home .descricao {
         padding-top: 40px;
+        margin-bottom: 20px;
     }
     
     #home .box-banner {
@@ -126,6 +132,10 @@
     #home .box-banner h2 {
         font-size: 38px;
         letter-spacing: 2px;
+    }
+
+    #home span.animated {
+        bottom: 30px
     }
 
     #servico {
@@ -199,6 +209,10 @@
     
     #home .box-banner {
         font-size: 18px;
+    }
+
+    #home span.animated {
+        bottom: 40px
     }
 
     #servico {
