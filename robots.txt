@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: https://robsonsoares.dev.br/sitemap.xml
