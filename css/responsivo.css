@@ -244,10 +244,6 @@
         height: auto;
     }
 
-    body {
-        max-width: 1700px;
-    }
-
     .container {
         max-width: 1300px;
     }
