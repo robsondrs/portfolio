@@ -84,10 +84,10 @@
         const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
         const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
         const seconds = Math.floor((diff % (1000 * 60)) / 1000);
-        daysClock.innerHTML = days;
-        hoursClock.innerHTML = hours;
-        minutesClock.innerHTML = minutes;
-        secondsClock.innerHTML = seconds;
+        daysClock.innerHTML = String(days).padStart(2, '0');
+        hoursClock.innerHTML = String(hours).padStart(2, '0');
+        minutesClock.innerHTML = String(minutes).padStart(2, '0');
+        secondsClock.innerHTML = String(seconds).padStart(2, '0');
     }
     x = setInterval(countdown, 1000);
 </script>
