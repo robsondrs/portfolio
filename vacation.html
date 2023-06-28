@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Vacation</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ysabeau+Infant:ital,wght@0,500;1,500&display=swap" rel="stylesheet">    
+    <link href="https://fonts.googleapis.com/css2?family=Agdasima:wght@700&family=Ysabeau+Infant:ital,wght@0,500;1,500&display=swap" rel="stylesheet">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        main {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background: radial-gradient(circle, rgba(174,228,238,1) 0%, rgba(43,71,193,1) 100%); 
+            font-family: 'Ysabeau Infant'; 
+            color: antiquewhite;
+        }
+        h1 {
+            font-size: 3rem;
+            text-align: center;
+            margin-bottom: 2rem;
+            font-style: italic;
+        }
+        #timer {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+        h3 {
+            font-size: 8rem;
+            margin: 0 1rem;
+            margin-top: -1.5rem;
+            text-align: center;
+            font-family: 'Agdasima';
+            font-weight: 700;
+            color: brown;      
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>My Vacation</h1>
+        <div id="timer">
+            <div>
+                <span>days</span>
+                <h3 id="days"></h3>
+            </div>
+            <div>
+                <span>hours</span>
+                <h3 id="hours"></h3>
+            </div>
+            <div>
+                <span>minutes</span>
+                <h3 id="minutes"></h3>
+            </div>
+            <div>
+                <span>seconds</span>
+                <h3 id="seconds"></h3>
+            </div>
+        </div>
+    </main>
+</body>
+<script>
+    function countdown(){
+        const daysClock = document.getElementById('days');
+        const hoursClock = document.getElementById('hours');
+        const minutesClock = document.getElementById('minutes');
+        const secondsClock = document.getElementById('seconds');
+        const date = new Date();
+        const vacationDate = new Date('2023-07-24');
+        const diff = vacationDate - date;
+        const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+        daysClock.innerHTML = days;
+        hoursClock.innerHTML = hours;
+        minutesClock.innerHTML = minutes;
+        secondsClock.innerHTML = seconds;
+    }
+    x = setInterval(countdown, 1000);
+</script>
+</html>
+
